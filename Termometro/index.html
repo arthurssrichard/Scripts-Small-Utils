@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termometro</title>
+</head>
+<style>
+    body{
+        background-color: darkblue;
+    }
+    #div-termometro{
+        background-color: rgba(0, 255, 255, 0.171);
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #bola{
+        margin-left: 26px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #833ab4;
+        position: absolute;
+    }
+    #medidor{
+        width: 100%;
+        height: 20px;
+        border-radius: 12px;
+        position: absolute;
+        background: inherit;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 58%, rgba(252,176,69,1) 100%);
+        clip-path: inset(0% 80% 0% 0% round 10px);
+
+    }
+    #medidor-wrapper{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        margin-left: 37px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+</style>
+<body>
+    <div id="div-termometro">
+        <div id="bola"></div>
+        <div id="medidor-wrapper"><div id="medidor"></div></div>
+        <img src="termometro.png" alt="termometro">
+    </div>
+</body>
+</html>
